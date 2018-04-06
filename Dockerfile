@@ -546,7 +546,7 @@ RUN pip install --upgrade dask && \
 
 # Add BigQuery client proxy settings
 ENV PYTHONUSERBASE "/root/.local"
-
+#ADD patches/sitecustomize.py /root/.local/lib/python3.6/site-packages/sitecustomize.py  nach unten geschoben
 
 # Set backend for matplotlib
 ENV MPLBACKEND "agg"
@@ -555,4 +555,4 @@ ENV MPLBACKEND "agg"
 ADD patches/nbconvert-extensions.tpl /opt/kaggle/nbconvert-extensions.tpl
 
 
-ADD patches/sitecustomize.py /root/.local/lib/python3.6/site-packages/sitecustomize.py
+#ADD patches/sitecustomize.py /root/.local/lib/python3.6/site-packages/sitecustomize.py
