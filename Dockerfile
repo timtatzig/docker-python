@@ -552,7 +552,7 @@ ENV PYTHONUSERBASE "/root/.local"
 ENV MPLBACKEND "agg"
 
 # Customize nbconvert.
-ADD patches/nbconvert-extensions.tpl /opt/kaggle/nbconvert-extensions.tpl
+#ADD patches/nbconvert-extensions.tpl /opt/kaggle/nbconvert-extensions.tpl
 
 
 #ADD patches/sitecustomize.py /root/.local/lib/python3.6/site-packages/sitecustomize.py
